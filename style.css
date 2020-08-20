@@ -1,0 +1,181 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.title {
+  grid-area: title;
+  text-align: center;
+  
+}
+
+nav {
+  background: darkgreen;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav .menu {
+  font-weight: 600;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 64px;
+}
+
+nav .menu a {
+  color: white;
+  font-size: 16px;
+  display: block;
+  line-height: inherit;
+  padding: 0 15px;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav .menu-item {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+nav .menu-item:hover {
+  background-color: black;
+}
+
+.country h2 {
+  font-size: 36px;
+  padding: 15px 0;
+  color: white;
+  background: black;
+  font-style: italic
+}
+
+
+.mySides img {
+  width: 100%;
+}
+
+
+
+.discovery h2 {
+  font-size: 36px;
+  padding: 15px 0;
+  color: white;
+}
+
+.discovery .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 10px;
+}
+
+.discovery article1 {
+  background-image: url(https://imagescdn.dealercarsearch.com/DealerImages/ImageLibrary/1920x800/5d8b9f6c.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.discovery article2 {
+  background-image: url(https://patch.com/img/cdn20/users/22881893/20171114/055313/styles/raw/public/processed_images/parking-1510699892-7314.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.discovery article3 {
+  background-image: url(https://www.thedelite.com/wp-content/uploads/2019/06/AdobeStock_205382466-e1561639746937.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.discovery a {
+  background: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: inline-block;
+}
+
+.discovery p {
+  display: none;
+}
+
+.discovery article:hover a {
+  color: orange;
+}
+
+.discovery article1:hover p {
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.discovery article2:hover p {
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.discovery article3:hover p {
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+
+
+.sidebar {
+  grid-area: sidebar;
+  text-align: center;
+}
+/* inside sidebar create a 3 column grid for the section items */
+.sidebar .sidebar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.news{
+  text-align: center;
+  font-weight:bold;
+  font-size: x-large;
+}
+.item1 img{
+  width: 100%;
+}
+.item2 img {
+  width: 100%;
+}
+.item3 img {
+  width: 100%;
+}
+
+.padded {
+  padding: 10px;
+}
+
+.post {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+h2{
+  color: black;
